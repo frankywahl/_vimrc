@@ -41,6 +41,9 @@ nmap <leader>sk  :leftabove  new<CR>
 nmap <leader>sj  :rightbelow new<CR>
 " End Window splitting
 
+"Folding remapping
+nnoremap <space> za
+vnoremap <space> za
 
 " PLUGINS
 " Nerd Tree

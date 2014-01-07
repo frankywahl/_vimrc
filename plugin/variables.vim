@@ -44,6 +44,12 @@ set background=dark
 
 "set virtualedit=all               "allows cursor to move on unedited space
 
+" Fold according to syntax
+set foldmethod=syntax
+" A big number to start unfolded
+set foldlevel=99
+
+
 " Color Scheme
 colorscheme solarized
 
