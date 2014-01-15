@@ -40,3 +40,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-endwise.git"]
+	path = bundle/vim-endwise.git
+	url = https://github.com/tpope/vim-endwise.git
