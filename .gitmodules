@@ -43,3 +43,6 @@
 [submodule "bundle/vim-endwise.git"]
 	path = bundle/vim-endwise.git
 	url = https://github.com/tpope/vim-endwise.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
