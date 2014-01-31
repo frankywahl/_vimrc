@@ -54,6 +54,9 @@ vnoremap <space> za
 map <C-n> :NERDTreeTabsToggle<CR>
 map <C-M-v> :NERDTreeToggle<CR>
 
+" Gundo
+nnoremap <leader>u :GundoToggle<cr>
+
 "Start NerdTree automatically if no files are meant to be edited
 autocmd vimenter * if !argc() | NERDTree | endif
 " Close vim if only page left is NERDTree
