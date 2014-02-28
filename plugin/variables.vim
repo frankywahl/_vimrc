@@ -54,18 +54,6 @@ set foldlevel=99
 colorscheme solarized
 
 if has("autocmd")
-  " Syntax of these languages is fussy over tabs Vs spaces
-  autocmd FileType make setlocal        tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
-  autocmd FileType yaml setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-
-  " Customisations based on house-style (arbitrary)
-  autocmd FileType html setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-  autocmd FileType css setlocal         tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-  autocmd FileType javascript setlocal  tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
-  autocmd FileType json setlocal        tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
-
-  autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-
   " Always treat .rss, .atom files as XML
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
 endif
