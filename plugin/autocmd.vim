@@ -21,7 +21,7 @@ augroup END
 
 augroup filtype_javascript
   autocmd!
-  autocmd FileType javascript setlocal  tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+  autocmd FileType javascript setlocal  tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
 
 augroup filtype_json
