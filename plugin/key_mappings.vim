@@ -43,6 +43,9 @@ nmap <leader>sh  :leftabove  vnew<CR>
 nmap <leader>sl  :rightbelow vnew<CR>
 nmap <leader>sk  :leftabove  new<CR>
 nmap <leader>sj  :rightbelow new<CR>
+
+nmap <leader>-      :split<CR>
+nmap <leader><bar>  :vsplit<CR>
 " End Window splitting
 
 "Folding remapping
