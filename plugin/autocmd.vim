@@ -38,3 +38,10 @@ augroup filtype_yaml
   autocmd!
   autocmd FileType yaml setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
+
+augroup filetyp_markdown
+  autocmd!
+  autocmd FileType markdown setlocal        tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
+augroup END
+
+
