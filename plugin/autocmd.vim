@@ -36,7 +36,22 @@ augroup END
 
 augroup filtype_yaml
   autocmd!
-  autocmd FileType yaml setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+  autocmd FileType yaml setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab foldmethod=indent
+augroup END
+
+augroup filtype_gitcommit
+  autocmd!
+  autocmd FileType gitcommit setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell
+augroup END
+
+augroup filtype_text
+  autocmd!
+  autocmd FileType text setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell
+augroup END
+
+augroup filtype_markdown
+  autocmd!
+  autocmd FileType markdown setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell
 augroup END
 
 augroup filetyp_markdown
