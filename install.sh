@@ -16,6 +16,8 @@ if which vim >/dev/null; then
 
   # Update submodules:
   # git submodule foreach git pull origin master
+  
+  echo "For markdown rendering, go read https://github.com/suan/vim-instant-markdown"
 
 else
   echo "${RED}Attention: ${DEFAULT} Vim not found"
