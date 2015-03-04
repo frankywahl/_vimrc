@@ -13,5 +13,5 @@ endfunction
 
 if has("autocmd")
 	" Remove trailing white space upon save
-	autocmd BufWritePre *.py,*.js,*.coffee,*.erb,*.rb :call <SID>StripTrailingWhitespaces()
+	autocmd BufWritePre *.py,*.js,*.coffee,*.erb,*.rb,*.rake,*.yml,*.md :call <SID>StripTrailingWhitespaces()
 end
