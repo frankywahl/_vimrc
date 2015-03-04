@@ -49,6 +49,9 @@ set foldmethod=syntax
 " A big number to start unfolded
 set foldlevel=99
 
+" Get compatible clipboard
+set clipboard=unnamed
+
 
 " Color Scheme
 colorscheme solarized

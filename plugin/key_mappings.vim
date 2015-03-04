@@ -32,6 +32,9 @@ nnoremap <silent> <C-l> :tabnext<CR>
 nnoremap <silent> <C-h> :tabprevious<CR>
 nnoremap <silent> <C-t> :tabnew<CR>
 
+" Escape
+imap jj <ESC>
+
 " Window splitting
 " window
 nmap <leader>swh :topleft  vnew<CR>
@@ -60,7 +63,10 @@ map <C-M-v> :NERDTreeToggle<CR>
 " Gundo
 nnoremap <leader>u :GundoToggle<cr>
 
+" CtrlP
+nnoremap <silent> t :CtrlP<cr>
+
 "Start NerdTree automatically if no files are meant to be edited
-autocmd vimenter * if !argc() | NERDTree | endif
+" autocmd vimenter * if !argc() | NERDTree | endif
 " Close vim if only page left is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
