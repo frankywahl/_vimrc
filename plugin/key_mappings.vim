@@ -70,3 +70,10 @@ nnoremap <silent> t :CtrlP<cr>
 " autocmd vimenter * if !argc() | NERDTree | endif
 " Close vim if only page left is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" resize current buffer by +/- 5 
+nnoremap <leader>J :vertical resize -5<cr>
+nnoremap <leader>L :vertical resize +5<cr>
+nnoremap <leader>H :vertical resize -5<cr>
+nnoremap <leader>K :resize +5<cr>
+nnoremap <leader>L :resize -5<cr>
