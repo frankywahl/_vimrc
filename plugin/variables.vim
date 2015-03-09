@@ -52,6 +52,8 @@ set foldlevel=99
 " Get compatible clipboard
 set clipboard=unnamed
 
+" Highlight the current line
+set cursorline
 
 " Color Scheme
 colorscheme solarized
