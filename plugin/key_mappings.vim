@@ -35,6 +35,10 @@ nnoremap <silent> <C-t> :tabnew<CR>
 " Escape
 imap jj <ESC>
 
+" Treat j and k as up and down on long lines in wrap mode.
+nnoremap j gj
+nnoremap k gk
+
 " Window splitting
 " window
 nmap <leader>swh :topleft  vnew<CR>
