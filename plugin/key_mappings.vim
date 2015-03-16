@@ -81,3 +81,6 @@ nnoremap <leader>L :vertical resize +5<cr>
 nnoremap <leader>H :vertical resize -5<cr>
 nnoremap <leader>K :resize +5<cr>
 nnoremap <leader>L :resize -5<cr>
+
+" Do not move cursor when highlighting word under cursor
+nnoremap * *N
