@@ -55,7 +55,12 @@ set clipboard=unnamed
 " Highlight the current line
 set cursorline
 
+" Mouse support
+set mouse=a
+set ttymouse=xterm2
+
 " Color Scheme
+let g:solarized_termtrans = 1
 colorscheme solarized
 
 if has("autocmd")
