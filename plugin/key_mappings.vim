@@ -59,6 +59,13 @@ nmap <leader><bar>  :vsplit<CR>
 nnoremap <space> za
 vnoremap <space> za
 
+" Spell check
+nnoremap z] ]s*N " next mispelled word
+nnoremap z[ [s*N " previsous mispelled word
+
+inoremap <C-x><C-x> <C-x>s
+nnoremap <C-x><C-x> i<C-x>s
+
 " PLUGINS
 " Nerd Tree
 map <C-n> :NERDTreeTabsToggle<CR>
