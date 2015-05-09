@@ -60,8 +60,10 @@ set mouse=a
 set ttymouse=xterm2
 
 " Color Scheme
-let g:solarized_termtrans = 1
-colorscheme solarized
+if filereadable( expand("$HOME/.vim/bundle/vim-colors-solarized/colors/solarized.vim") )
+  let g:solarized_termtrans = 1
+  colorscheme solarized
+endif
 
 if has("autocmd")
   " Always treat .rss, .atom files as XML
