@@ -11,14 +11,7 @@ if which vim >/dev/null; then
   ln -s ${PATH_TO_FILE} ~/.vim && mkdir -p ~/.vim/backup ~/.vim/swap 
   ln -s ${PATH_TO_FILE}/vimrc ~/.vimrc 
 
-  # Install submodules
-  cd ${PATH_TO_FILE} && git submodule init && git submodule update
-
-  # Update submodules:
-  # git submodule foreach git pull origin master
-  
   echo "For markdown rendering, go read https://github.com/suan/vim-instant-markdown"
-
 else
   echo "${RED}Attention: ${DEFAULT} Vim not found"
 fi 
