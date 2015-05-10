@@ -30,6 +30,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'Valloric/YouCompleteMe'
 
 
 " All of your Plugins must be added before the following line
