@@ -91,3 +91,11 @@ let java_mark_braces_in_parens_as_errors=1
 
 " highlight strings inside C comments
 let c_comment_strings=1
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
