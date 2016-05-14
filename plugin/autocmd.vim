@@ -29,6 +29,11 @@ augroup filtype_json
   autocmd FileType json setlocal        tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 augroup END
 
+augroup filtype_ruby
+  autocmd!
+  autocmd FileType ruby setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+augroup END
+
 augroup filtype_make
   autocmd!
   autocmd FileType make setlocal        tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
