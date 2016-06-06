@@ -46,7 +46,7 @@ augroup END
 
 augroup filtype_gitcommit
   autocmd!
-  autocmd FileType gitcommit setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell
+  autocmd FileType gitcommit setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell textwidth=72
 augroup END
 
 augroup filtype_text
