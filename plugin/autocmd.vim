@@ -59,9 +59,15 @@ augroup filtype_markdown
   autocmd FileType markdown setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell
 augroup END
 
-augroup filetyp_markdown
+augroup filetype_markdown
   autocmd!
   autocmd FileType markdown setlocal        tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
+augroup END
+
+
+augroup filetype_go
+  autocmd!
+  autocmd FileType go setlocal        tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 augroup END
 
 
