@@ -68,6 +68,7 @@ endif
 if has("autocmd")
   " Always treat .rss, .atom files as XML
   autocmd BufNewFile,BufRead *.rss,*.atom setfiletype xml
+  autocmd BufNewFile,BufRead *.slim setfiletype slim
 endif
 
 " In case a shell command wants to open $EDITOR we use something
