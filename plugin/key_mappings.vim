@@ -9,7 +9,7 @@
 " l: insert, command-line, regexp-search (and others. Collectivel called "Lang-Arg" pseudo-mode)
 "
 
-"My preferred leader key
+" My preferred leader key
 let mapleader=","
 
 " Remap ; to : in normal mode
@@ -25,7 +25,6 @@ vnoremap <C-V> v
 " Shortcut to rapidly toggle `set list`
 " In normal mode, just type \l
 nmap <leader>l :set list!<CR>
-
 
 " Tabs and navigation
 nnoremap <silent> <C-l> :tabnext<CR>
@@ -65,22 +64,6 @@ nnoremap z[ [s*N " previsous mispelled word
 
 inoremap <C-x><C-x> <C-x>s
 nnoremap <C-x><C-x> i<C-x>s
-
-" PLUGINS
-" Nerd Tree
-map <C-n> :NERDTreeTabsToggle<CR>
-map <C-M-v> :NERDTreeToggle<CR>
-
-" Gundo
-nnoremap <leader>u :GundoToggle<cr>
-
-" CtrlP
-nnoremap <silent> t :CtrlP<cr>
-
-"Start NerdTree automatically if no files are meant to be edited
-" autocmd vimenter * if !argc() | NERDTree | endif
-" Close vim if only page left is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " resize current buffer by +/- 5 
 nnoremap <leader>J :vertical resize -5<cr>
