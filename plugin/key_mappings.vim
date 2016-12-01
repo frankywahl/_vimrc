@@ -75,3 +75,5 @@ nnoremap <leader>L :resize -5<cr>
 " Do not move cursor when highlighting word under cursor
 nnoremap * *N
 map <Leader>b obinding.pry<esc>:w<cr>
+
+nmap <silent> ,/ :nohlsearch<CR>
