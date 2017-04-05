@@ -62,6 +62,12 @@ set cursorline
 set mouse=a
 set ttymouse=xterm2
 
+" Status line
+set statusline=%f         " Path to the file
+set statusline+=\ -\      " Separator
+set statusline+=FileType: " Label
+set statusline+=%y        " Filetype of the file
+
 " Color Scheme
 if filereadable( expand("$HOME/.vim/bundle/vim-colors-solarized/colors/solarized.vim") )
   let g:solarized_termtrans = 1
