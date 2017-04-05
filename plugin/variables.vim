@@ -42,6 +42,9 @@ set comments=sl:/*,mb:**,elx:*/   " enable automagic multi-line comments
 
 set background=dark
 
+" Vertical splits in vimdiff
+set diffopt+=vertical
+
 "set virtualedit=all               "allows cursor to move on unedited space
 
 " Fold according to syntax
