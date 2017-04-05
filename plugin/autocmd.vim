@@ -3,58 +3,58 @@ augroup filetype_csv
   autocmd FileType yaml setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
 
-augroup filtype_haml
+augroup filetype_haml
   autocmd!
   autocmd FileType haml setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab foldmethod=indent
 augroup END
 
-augroup filtype_html
+augroup filetype_html
   autocmd!
   autocmd FileType html setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
 
-augroup filtype_css
+augroup filetype_css
   autocmd!
   autocmd FileType css setlocal         tabstop=2 softtabstop=2 shiftwidth=2 expandtab
   autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 augroup END
 
-augroup filtype_javascript
+augroup filetype_javascript
   autocmd!
   autocmd FileType javascript setlocal  tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
 
-augroup filtype_json
+augroup filetype_json
   autocmd!
   autocmd FileType json setlocal        tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 augroup END
 
-augroup filtype_ruby
+augroup filetype_ruby
   autocmd!
   autocmd FileType ruby setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
 
-augroup filtype_make
+augroup filetype_make
   autocmd!
   autocmd FileType make setlocal        tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 augroup END
 
-augroup filtype_yaml
+augroup filetype_yaml
   autocmd!
   autocmd FileType yaml setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab foldmethod=indent
 augroup END
 
-augroup filtype_gitcommit
+augroup filetype_gitcommit
   autocmd!
   autocmd FileType gitcommit setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell textwidth=72
 augroup END
 
-augroup filtype_text
+augroup filetype_text
   autocmd!
   autocmd FileType text setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell
 augroup END
 
-augroup filtype_markdown
+augroup filetype_markdown
   autocmd!
   autocmd FileType markdown setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab spell
 augroup END
