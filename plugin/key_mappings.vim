@@ -9,9 +9,6 @@
 " l: insert, command-line, regexp-search (and others. Collectivel called "Lang-Arg" pseudo-mode)
 "
 
-" My preferred leader key
-let mapleader=","
-
 " Remap ; to : in normal mode
 nnoremap ; :
 xnoremap ; :
