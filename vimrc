@@ -36,6 +36,7 @@ Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'Shougo/neocomplete.vim'
 
 
 " All of your Plugins must be added before the following line
