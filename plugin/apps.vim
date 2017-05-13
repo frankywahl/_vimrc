@@ -81,3 +81,15 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
+
+"------------------------------------------------------------------------------
+" vim-go
+" https://www.github.com/fatih/vim-go
+"------------------------------------------------------------------------------
+" By default syntax-highlighting for Functions, Methods and Structs is disabled.
+" Let's enable them!
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_interfaces = 1
