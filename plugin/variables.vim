@@ -3,7 +3,7 @@ syntax on
 filetype on
 filetype plugin indent on
 
-set term=builtin_ansi
+set term=xterm-256color
 
 set relativenumber  "displays line numbers - relative to cursor
 
@@ -69,10 +69,10 @@ set statusline+=FileType: " Label
 set statusline+=%y        " Filetype of the file
 
 " Color Scheme
-if filereadable( expand("$HOME/.vim/plugged/vim-colors-solarized/colors/solarized.vim") )
-  let g:solarized_termtrans = 1
+" if filereadable( expand("$HOME/.vim/bundle/vim-colors-solarized/colors/solarized.vim") )
+"   let g:solarized_termtrans = 1
   colorscheme solarized
-endif
+" endif
 
 if has("autocmd")
   " Always treat .rss, .atom files as XML
