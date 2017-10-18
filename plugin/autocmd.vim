@@ -74,7 +74,12 @@ augroup filetype_go
   autocmd FileType go setlocal        tabstop=2 softtabstop=2 shiftwidth=2 noexpandtab
 
 	" Go to definition
+	" Open the current definition
 	autocmd FileType go nmap gf :GoDef<CR>
+	au FileType go nmap <Leader>ds <Plug>(go-def-split)
+	au FileType go nmap <Leader>d- <Plug>(go-def-split)
+	au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+	au FileType go nmap <Leader>d<bar> <Plug>(go-def-vertical)
 
 	" Show a list of interfaces which is implemented by the type under your cursor
 	autocmd FileType go nmap <Leader>s <Plug>(go-implements)
