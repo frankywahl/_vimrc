@@ -38,6 +38,8 @@ Plugin 'myusuf3/numbers.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'fatih/vim-go'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
