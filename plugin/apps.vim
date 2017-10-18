@@ -38,12 +38,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
 
 "------------------------------------------------------------------------------
-" vim-go
-" 'faith/vim-go'
-"------------------------------------------------------------------------------
-let g:go_fmt_command = "goimports"
-
-"------------------------------------------------------------------------------
 " Gundo
 " 'sjl/gundo.vim'
 "------------------------------------------------------------------------------
@@ -92,6 +86,7 @@ let g:tagbar_type_go = {
 " vim-go
 " https://www.github.com/fatih/vim-go
 "------------------------------------------------------------------------------
+let g:go_fmt_command = "goimports"
 " By default syntax-highlighting for Functions, Methods and Structs is disabled.
 " Let's enable them!
 let g:go_highlight_functions = 1
