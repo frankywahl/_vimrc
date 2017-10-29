@@ -1,47 +1,50 @@
 " All files are located in ~/.vim/plugin
-set nocompatible
-filetype on
 
 " My preferred leader key
 let mapleader=","
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rhubarb'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-endwise'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'sjl/gundo.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'w0rp/ale'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'dbakker/vim-lint'
-Plugin 'godlygeek/tabular'
-Plugin 'tomtom/tlib_vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'slim-template/vim-slim'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'jgdavey/tslime.vim'
-Plugin 'suan/vim-instant-markdown'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+call plug#begin('~/.vim/plugged')
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+Plug 'junegunn/vim-plug'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-rails', { 'for': ['ruby'] }
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-endwise'
+Plug 'altercation/vim-colors-solarized'
+Plug 'sjl/gundo.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'w0rp/ale'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'kien/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'dbakker/vim-lint'
+Plug 'godlygeek/tabular'
+Plug 'tomtom/tlib_vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'slim-template/vim-slim', { 'for': ['slim'] }
+Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
+Plug 'jgdavey/tslime.vim'
+Plug 'suan/vim-instant-markdown', { 'for': ['markdown'] }
+Plug 'scrooloose/nerdcommenter'
+Plug 'myusuf3/numbers.vim'
+Plug 'majutsushi/tagbar'
+Plug 'Shougo/neocomplete.vim'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries', 'for': ['go'] }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer', 'for': ['go'] }
+Plug 'nsf/gocode', {'rtp': 'vim/', 'for': ['go'] }
 
+" All of your Plugs must be added before the following line
+"
+" Initialize plugin system
+call plug#end()            " required

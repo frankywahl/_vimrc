@@ -11,9 +11,7 @@ if which vim >/dev/null; then
   ln -s ${PATH_TO_FILE} ~/.vim && mkdir -p ~/.vim/backup ~/.vim/swap 
   ln -s ${PATH_TO_FILE}/vimrc ~/.vimrc 
 
-  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-  vim +PluginInstall +qall now
+  vim +PlugUpdate +PlugUpgrade
 
   echo "For markdown rendering, go read https://github.com/suan/vim-instant-markdown"
 else

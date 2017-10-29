@@ -69,7 +69,7 @@ set statusline+=FileType: " Label
 set statusline+=%y        " Filetype of the file
 
 " Color Scheme
-if filereadable( expand("$HOME/.vim/bundle/vim-colors-solarized/colors/solarized.vim") )
+if filereadable( expand("$HOME/.vim/plugged/vim-colors-solarized/colors/solarized.vim") )
   let g:solarized_termtrans = 1
   colorscheme solarized
 endif
