@@ -24,7 +24,6 @@ Plug 'sjl/gundo.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'w0rp/ale'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'kien/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'dbakker/vim-lint'
 Plug 'godlygeek/tabular'
@@ -43,6 +42,8 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries', 'for': ['go'] }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer', 'for': ['go'] }
 Plug 'nsf/gocode', {'rtp': 'vim/', 'for': ['go'] }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --bin' }
+Plug 'junegunn/fzf.vim'
 
 " All of your Plugs must be added before the following line
 "

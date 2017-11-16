@@ -44,10 +44,11 @@ let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
 nnoremap <leader>u :GundoToggle<cr>
 
 "------------------------------------------------------------------------------
-" CtrlP
-" 'kien/ctrlp.vim'
+" fzf
+" 'junegunn/fzf'
 "------------------------------------------------------------------------------
-nnoremap <silent> t :CtrlP<cr>
+nnoremap <silent> t :FZF<cr>
+let g:fzf_layout = { 'down': '~40%' }
 
 "------------------------------------------------------------------------------
 " Tagbar
