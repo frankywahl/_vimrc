@@ -44,6 +44,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer', 'for': ['g
 Plug 'nsf/gocode', {'rtp': 'vim/', 'for': ['go'] }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
 
 " All of your Plugs must be added before the following line
 "
