@@ -69,6 +69,8 @@ nnoremap <leader>H :vertical resize -5<cr>
 nnoremap <leader>K :resize +5<cr>
 nnoremap <leader>L :resize -5<cr>
 
+" Switch between this buffer and the last
+nnoremap <leader><leader> <c-^>
 " Do not move cursor when highlighting word under cursor
 nnoremap * *N
 
