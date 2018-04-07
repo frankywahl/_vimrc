@@ -13,7 +13,7 @@ set nocompatible    " don't want vi compatibility
 
 set autoindent      "indents lines based on previous lines
 set cindent         " enable automatic indention
-
+set autoread        " If a file is changed outside of vim, automatically reload it without asking
 set tabstop=2       " tabstop,ts			: width of a tab character
 set softtabstop=2   " Shifwidth,sw		: amount of white space to insert/remove using indentation commands in normal mode
 set shiftwidth=2    " Softabstop, sws	: fine-tune amount of white space to be inserted
