@@ -33,6 +33,7 @@ augroup filetype_ruby
   autocmd!
   autocmd Filetype ruby map <Leader>b obinding.pry<ESC>:w<cr>
   autocmd Filetype ruby nmap ,r <ESC>:!rspec %<CR>
+  autocmd Filetype ruby nmap ,cop <ESC>:!rubocop -a --config ~/.rubocop.yml %<CR>
   autocmd FileType ruby setlocal        tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
 
