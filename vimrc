@@ -36,7 +36,6 @@ Plug 'thoughtbot/vim-rspec', { 'for': ['ruby'] }
 Plug 'jgdavey/tslime.vim'
 Plug 'suan/vim-instant-markdown', { 'for': ['markdown'] }
 Plug 'scrooloose/nerdcommenter'
-Plug 'myusuf3/numbers.vim'
 Plug 'majutsushi/tagbar'
 Plug 'Shougo/neocomplete.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries', 'for': ['go'] }

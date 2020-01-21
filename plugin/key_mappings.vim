@@ -80,3 +80,6 @@ nmap <silent> ,/ :nohlsearch<CR>
 " SHORTCUT TO REFERENCE CURRENT FILE'S PATH IN COMMAND LINE MODE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 cnoremap <expr> %% expand('%:h').'/'
+
+" Enable / Disable relative line numbering
+nnoremap <leader>n :set relativenumber!<CR>

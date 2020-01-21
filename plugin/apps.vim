@@ -10,12 +10,6 @@ map <C-M-v> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "------------------------------------------------------------------------------
-" Number
-" 'myusuf3/numbers.vim'
-"------------------------------------------------------------------------------
-nnoremap <leader>n :NumbersToggle<CR>
-
-"------------------------------------------------------------------------------
 " Nerdcommenter
 " 'scrooloose/nerdcommenter'
 "------------------------------------------------------------------------------
