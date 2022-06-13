@@ -51,6 +51,10 @@ nmap <leader>-      :split<CR>
 nmap <leader><bar>  :vsplit<CR>
 " End Window splitting
 
+
+" Toggle Background
+nmap <leader>bg :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+
 "Folding remapping
 nnoremap <space> za
 vnoremap <space> za
