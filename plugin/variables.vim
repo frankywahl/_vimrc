@@ -5,7 +5,7 @@ filetype plugin indent on
 
 set term=builtin_ansi
 
-set relativenumber  "displays line numbers - relative to cursor
+set number relativenumber  "displays line numbers - relative to cursor
 
 set wildmenu        " tab completion in menu at bottom
 
